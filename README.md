@@ -21,6 +21,8 @@
    - 访问 `https://<用户名>.github.io/voice-official-website/`。
    - 注意：中国大陆访问 GitHub Pages 可能不稳定，正式运营建议改用云服务器 + 域名（需 ICP 备案）。
 
+本项目的正式访问地址：**https://qinshifenmian.github.io/voice-official-website/**
+
 2. **国内云主机 / 对象存储**
    - 阿里云 OSS / 腾讯云 COS 静态网站托管，或云服务器 Nginx；
    - 将 `index.html` 放至站点根目录即可。
