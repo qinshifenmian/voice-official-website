@@ -477,7 +477,7 @@ img{max-width:100%;display:block}
   .hero{padding:112px 0 60px}
   .hero-kicker{letter-spacing:.18em;width:94%}
   .hero-stats{grid-template-columns:repeat(2,1fr);gap:18px;padding:22px 8px 8px}
-  .arch-cards,.grid-hw,.grid-mid,.grid-matrix,.grid-cases{grid-template-columns:1fr}
+  .arch-cards,.grid-hw,.grid-mid,.grid-matrix,.grid-cases,.grid-train{grid-template-columns:1fr}
   .card-fly.wide{grid-column:auto}
   .footer-lead__form .row{grid-template-columns:1fr}
   .footer-lead__inner{padding:66px 20px 60px}
@@ -486,3 +486,94 @@ img{max-width:100%;display:block}
   .ghost-text{font-size:clamp(2.4rem,10vw,3.4rem)}
 }
 
+/* ============ 智能工牌：五大难题 ============ */
+.grid-fix{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin:42px 0 8px}
+.card-fix{
+  background:#fff;border-radius:12px;box-shadow:var(--shadow);
+  padding:18px 20px;text-align:left;position:relative;
+  transition:box-shadow .28s,transform .28s;
+}
+.card-fix:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px)}
+.card-fix__no{font-family:var(--black);font-size:1.05rem;font-weight:900;color:rgba(139,92,246,.3);margin-bottom:8px}
+.card-fix__bad{
+  font-size:.78rem;color:var(--text-faint);line-height:1.55;
+  text-decoration:line-through;text-decoration-color:rgba(156,163,175,.55);
+}
+.card-fix__arrow{display:block;width:16px;height:2px;background:var(--gradient);border-radius:2px;margin:10px 0 8px}
+.card-fix__good{font-size:.88rem;font-weight:600;color:var(--purple);line-height:1.55}
+
+/* ============ 智能工牌：员工端 / 管理端 ============ */
+.grid-split{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:44px}
+.card-split{
+  background:linear-gradient(180deg,#f0f2ff 0%,#f5f6fc 30%,#ffffff 100%);
+  border-radius:12px;padding:24px 26px 26px;box-shadow:0 6px 28px rgba(17,24,39,.07);
+  transition:box-shadow .28s,transform .28s;
+}
+.card-split:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px)}
+.card-split__head{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.card-split__icon{
+  flex-shrink:0;width:46px;height:46px;border-radius:12px;background:#fff;
+  box-shadow:var(--shadow-sm);color:var(--purple);display:flex;align-items:center;justify-content:center;
+}
+.card-split__icon svg{width:24px;height:24px;stroke:currentColor}
+.card-split__title{margin:0;font-size:1.125rem;font-weight:700;color:#111827;line-height:1.35}
+.card-split__sub{margin:4px 0 0;font-size:.75rem;color:#888}
+.card-split__pills{display:flex;flex-wrap:wrap;gap:10px}
+.card-split__pill{
+  display:inline-flex;align-items:center;gap:8px;margin:0;padding:8px 13px 8px 11px;
+  border-radius:999px;background:linear-gradient(90deg,#eef0f7 0%,#f4f5fa 42%,#fbfbfd 78%,#ffffff 100%);
+  font-size:.8rem;line-height:1.4;color:#374151;font-weight:500;
+}
+
+/* ============ 智能对练 ============ */
+.train-quote{
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px 26px;
+  margin:30px 0 40px;text-align:center;
+}
+.train-quote span{
+  font-size:.95rem;font-weight:600;color:#374151;
+  border:1px solid rgba(139,92,246,.18);background:rgba(139,92,246,.05);
+  border-radius:999px;padding:11px 24px;
+}
+.train-quote em{font-style:normal;color:var(--purple);font-weight:700}
+.grid-train{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card-train{
+  padding:24px 24px 26px;border-radius:12px;text-align:left;
+  background:#fff;box-shadow:0 4px 24px rgba(17,24,39,.06);
+  display:flex;flex-direction:column;transition:box-shadow .28s,transform .28s;
+}
+.card-train:hover{box-shadow:var(--shadow-lg);transform:translateY(-5px)}
+.card-train__icon{
+  width:48px;height:48px;border-radius:12px;margin-bottom:18px;
+  background:linear-gradient(135deg,rgba(167,139,250,.22),rgba(139,92,246,.14));
+  color:var(--purple);display:flex;align-items:center;justify-content:center;
+}
+.card-train__icon svg{width:26px;height:26px;stroke:currentColor}
+.card-train__title{margin:0;font-size:1.125rem;font-weight:700;color:#111827;line-height:1.35}
+.card-train__desc{margin:10px 0 0;font-size:.85rem;line-height:1.7;color:#6b7280}
+.card-train__pills{list-style:none;margin:18px 0 0;padding:0;display:flex;flex-direction:column;gap:9px}
+.card-train__pill{
+  display:flex;align-items:center;gap:10px;margin:0;padding:8px 13px 8px 11px;
+  border-radius:999px;background:linear-gradient(90deg,#eef0f7 0%,#f4f5fa 42%,#fbfbfd 78%,#ffffff 100%);
+  font-size:.8rem;line-height:1.45;color:#333;font-weight:500;
+}
+.card-train__bullet{flex-shrink:0;width:6px;height:6px;border-radius:50%;background:var(--purple)}
+.train-strip{
+  display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:40px;
+}
+.train-strip span{
+  font-size:.85rem;color:#374151;font-weight:500;
+  border:1px solid rgba(17,24,39,.08);border-radius:999px;padding:9px 18px;background:#fff;
+  box-shadow:var(--shadow-sm);
+}
+@media (max-width:1180px){
+  .grid-fix{grid-template-columns:repeat(3,1fr)}
+  .grid-train{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:900px){
+  .grid-split{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .grid-fix{grid-template-columns:repeat(2,1fr)}
+  .grid-train{grid-template-columns:1fr}
+}
