@@ -49,22 +49,46 @@
     }
   }
 
-  // —— 联系表单（防提交，仅前端提示） ——
-  var contactForm = document.querySelector('.contact-form form');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
+  // —— 预约表单（提交到本机后端数据库） ——
+  var DEMO_API = 'https://alerts-jim-showtimes-ensures.trycloudflare.com';
+  var demoForm = document.getElementById('demoForm');
+  if (demoForm) {
+    demoForm.addEventListener('submit', function (e) {
       e.preventDefault();
-      var btn = contactForm.querySelector('button[type="submit"]');
+      var btn = demoForm.querySelector('button[type="submit"]');
+      var field = function (name) {
+        var el = demoForm.querySelector('[name="' + name + '"]');
+        return el ? el.value.trim() : '';
+      };
       if (btn) {
-        var original = btn.textContent;
-        btn.textContent = '提交成功，我们将尽快联系您';
         btn.disabled = true;
-        setTimeout(function () {
-          btn.textContent = original;
-          btn.disabled = false;
-          contactForm.reset();
-        }, 3000);
+        btn.textContent = '提交中…';
       }
+      var failBox = document.getElementById('formFail');
+      if (failBox) failBox.style.display = 'none';
+      fetch(DEMO_API + '/api/demo', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: field('name'),
+          phone: field('phone'),
+          company: field('company'),
+          message: field('message')
+        })
+      }).then(function (res) {
+        return res.json();
+      }).then(function (result) {
+        if (!result.ok) throw new Error('submit failed');
+        demoForm.style.display = 'none';
+        var okBox = document.getElementById('formOk');
+        if (okBox) okBox.style.display = 'block';
+      }).catch(function () {
+        if (btn) {
+          btn.disabled = false;
+          btn.textContent = '提交预约';
+        }
+        if (failBox) failBox.style.display = 'block';
+      });
     });
   }
 })();
