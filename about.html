@@ -154,17 +154,21 @@
       <p class="cta-desc">预约一次 30 分钟的产品演示，我们将结合您的业务场景，完整演示四端产品、AI 报告与数据看板，专业团队为您提供一对一咨询服务。</p>
       <form id="demoForm" style="max-width:520px;margin:0 auto 40px;">
         <div style="display:flex;gap:16px;margin-bottom:16px;">
-          <input type="text" placeholder="您的姓名 *" required style="flex:1;padding:14px 18px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);border-radius:10px;color:white;font-size:15px;font-family:inherit;outline:none;" onfocus="this.style.borderColor='rgba(37,99,235,0.6)'" onblur="this.style.borderColor='rgba(255,255,255,0.2)'">
-          <input type="tel" placeholder="联系电话 *" required style="flex:1;padding:14px 18px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);border-radius:10px;color:white;font-size:15px;font-family:inherit;outline:none;" onfocus="this.style.borderColor='rgba(37,99,235,0.6)'" onblur="this.style.borderColor='rgba(255,255,255,0.2)'">
+          <input type="text" name="name" placeholder="您的姓名 *" required style="flex:1;padding:14px 18px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);border-radius:10px;color:white;font-size:15px;font-family:inherit;outline:none;" onfocus="this.style.borderColor='rgba(37,99,235,0.6)'" onblur="this.style.borderColor='rgba(255,255,255,0.2)'">
+          <input type="tel" name="phone" placeholder="联系电话 *" required style="flex:1;padding:14px 18px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);border-radius:10px;color:white;font-size:15px;font-family:inherit;outline:none;" onfocus="this.style.borderColor='rgba(37,99,235,0.6)'" onblur="this.style.borderColor='rgba(255,255,255,0.2)'">
         </div>
-        <input type="text" placeholder="机构名称" style="width:100%;padding:14px 18px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);border-radius:10px;color:white;font-size:15px;font-family:inherit;outline:none;margin-bottom:16px;" onfocus="this.style.borderColor='rgba(37,99,235,0.6)'" onblur="this.style.borderColor='rgba(255,255,255,0.2)'">
-        <textarea placeholder="业务场景或想了解的内容（选填）" style="width:100%;padding:14px 18px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);border-radius:10px;color:white;font-size:15px;font-family:inherit;outline:none;margin-bottom:16px;min-height:100px;resize:vertical;" onfocus="this.style.borderColor='rgba(37,99,235,0.6)'" onblur="this.style.borderColor='rgba(255,255,255,0.2)'"></textarea>
+        <input type="text" name="company" placeholder="机构名称" style="width:100%;padding:14px 18px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);border-radius:10px;color:white;font-size:15px;font-family:inherit;outline:none;margin-bottom:16px;" onfocus="this.style.borderColor='rgba(37,99,235,0.6)'" onblur="this.style.borderColor='rgba(255,255,255,0.2)'">
+        <textarea name="message" placeholder="业务场景或想了解的内容（选填）" style="width:100%;padding:14px 18px;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);border-radius:10px;color:white;font-size:15px;font-family:inherit;outline:none;margin-bottom:16px;min-height:100px;resize:vertical;" onfocus="this.style.borderColor='rgba(37,99,235,0.6)'" onblur="this.style.borderColor='rgba(255,255,255,0.2)'"></textarea>
         <button type="submit" class="btn btn-white btn-lg" style="width:100%;">提交预约</button>
-        <p style="font-size:13px;color:var(--gray-500);margin-top:12px;">演示页面为前端示例，提交信息不会实际发送；正式部署时请对接您的 CRM 或表单服务。</p>
+        <p style="font-size:13px;color:var(--gray-500);margin-top:12px;">提交后我们的专业顾问将在 1 个工作日内与您联系。</p>
       </form>
       <div id="formOk" style="display:none;max-width:400px;margin:0 auto 40px;padding:32px;background:rgba(37,99,235,0.1);border:1px solid rgba(37,99,235,0.3);border-radius:16px;">
         <b style="font-size:20px;color:white;display:block;margin-bottom:8px;">提交成功</b>
         <p style="font-size:15px;color:var(--gray-300);">我们将在 1 个工作日内与您联系。</p>
+      </div>
+      <div id="formFail" style="display:none;max-width:400px;margin:0 auto 40px;padding:32px;background:rgba(220,38,38,0.1);border:1px solid rgba(220,38,38,0.35);border-radius:16px;">
+        <b style="font-size:20px;color:white;display:block;margin-bottom:8px;">提交失败</b>
+        <p style="font-size:15px;color:var(--gray-300);">网络开小差了，请稍后重试，或直接拨打 400-000-0000 与我们联系。</p>
       </div>
       <div class="cta-contact">
         <div class="cta-contact-item">
