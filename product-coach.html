@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>智能对练系统 · 数字教练 | Voice 智能医美</title>
+<meta name="description" content="基于机构真实知识库，AI 一键建课、数字人陪练、标准评分、考试验证——把每一次练习都变成看得见的成长。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='64' y2='64'%3E%3Cstop offset='0' stop-color='%232563eb'/%3E%3Cstop offset='1' stop-color='%2306b6d4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Cpath d='M12 36h8l5-12 8 22 7-16 5 6h7' fill='none' stroke='%23fff' stroke-width='4.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="./assets/voice.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a class="logo" href="./index.html">
+      <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13h4l3-8 4 13 3.5-9 2.5 4H21"></path></svg></span>
+      <span>Voice 智能医美<small>VOICE INTELLIGENCE</small></span>
+    </a>
+    <nav class="nav">
+      <a class="nav__link" href="./index.html">首页</a>
+      <a class="nav__link active" href="./product-coach.html">智能对练</a>
+      <a class="nav__link" href="./product-badge.html">智能工牌</a>
+      <a class="nav__link" href="./closed-loop.html">三大闭环</a>
+      <a class="nav__link" href="./about.html">关于我们</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-primary" href="./about.html#contact">预约演示</a>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单"><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span><span class="nav-toggle__bar"></span></button>
+    </div>
+  </div>
+  <div class="nav-panel" id="navPanel">
+    <a href="./index.html">首页</a><a href="./product-coach.html">智能对练</a><a href="./product-badge.html">智能工牌</a><a href="./closed-loop.html">三大闭环</a><a href="./about.html">关于我们</a><a href="./about.html#contact" class="btn btn-primary">预约演示</a>
+  </div>
+</header>
+
+<!-- ============ PAGE HERO ============ -->
+<section class="page-hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow hero-glow--1"></div>
+  <div class="container">
+    <div class="hero-kicker">AI TRAINING SYSTEM</div>
+    <h1 class="page-hero__title">智能对练系统 · 数字教练</h1>
+    <p class="page-hero__desc">基于机构真实知识库，AI 一键建课、数字人陪练、标准评分、考试验证——把每一次练习都变成看得见的成长。</p>
+  </div>
+</section>
+
+<!-- ============ 场景痛点 ============ -->
+<section class="section section--gray">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-kicker">PAIN POINTS</span>
+      <h2 class="section-title">新人培训的四大困境</h2>
+      <p class="section-desc">医美行业新人成长周期长、培训成本高、效果难量化，传统培训方式正在拖慢机构的增长节奏。</p>
+    </div>
+    <div class="grid-4">
+      <div class="pain-card sr-item">
+        <div class="pain-card__num">01</div>
+        <p class="pain-card__bad">老带新效率低</p>
+        <p class="pain-card__good">AI 数字人 7x24 陪练</p>
+        <p class="pain-card__desc">不再依赖老员工时间，新人随时可练，反复可练。</p>
+      </div>
+      <div class="pain-card sr-item" style="transition-delay:0.08s">
+        <div class="pain-card__num">02</div>
+        <p class="pain-card__bad">培训内容不统一</p>
+        <p class="pain-card__good">知识库标准化建课</p>
+        <p class="pain-card__desc">机构真实文档话术沉淀为知识库，AI 一键生成场景课程。</p>
+      </div>
+      <div class="pain-card sr-item" style="transition-delay:0.16s">
+        <div class="pain-card__num">03</div>
+        <p class="pain-card__bad">练习效果不可见</p>
+        <p class="pain-card__good">多维度 AI 评分量化</p>
+        <p class="pain-card__desc">亲和力、熟练度、专业度全维评分，每次进步看得见。</p>
+      </div>
+      <div class="pain-card sr-item" style="transition-delay:0.24s">
+        <div class="pain-card__num">04</div>
+        <p class="pain-card__bad">学了记不住</p>
+        <p class="pain-card__good">考试验证 + 薄弱项分析</p>
+        <p class="pain-card__desc">自动组卷补考，考后分析薄弱项并给出试题解析。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 核心功能 ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-kicker">CORE FEATURES</span>
+      <h2 class="section-title">四大核心能力</h2>
+      <p class="section-desc">从课程创建到对练执行，从评分量化到考试验证，构建完整的培训闭环。</p>
+    </div>
+    <div class="grid-2">
+      <!-- 数字人对练 -->
+      <div class="card sr-item">
+        <div class="loop-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8.5 14.5a4 4 0 0 0 7 0"></path><path d="M9 10h.01M15 10h.01"></path><path d="M12 3v3M12 18v3M3 12h3M18 12h3"></path></svg></div>
+        <h3 style="font-size:22px;font-weight:700;color:var(--gray-900);margin-bottom:12px;">数字人对练</h3>
+        <p style="font-size:15px;color:var(--gray-500);line-height:1.7;margin-bottom:24px;">AI 角色可自定义身份、性格、社会背景，模拟真实客户语音对练，让每一次练习都贴近实战。</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;">
+          <span class="feature-pill"><span class="check"></span>角色背景自由设定</span>
+          <span class="feature-pill"><span class="check"></span>多种音色可选试听</span>
+          <span class="feature-pill"><span class="check"></span>语音实时对话</span>
+        </div>
+      </div>
+      <!-- AI 一键建课 -->
+      <div class="card sr-item" style="transition-delay:0.08s;">
+        <div class="loop-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"></path><path d="M19 15l.9 2.1L22 18l-2.1.9L19 21l-.9-2.1L16 18l2.1-.9L19 15z"></path></svg></div>
+        <h3 style="font-size:22px;font-weight:700;color:var(--gray-900);margin-bottom:12px;">AI 一键建课</h3>
+        <p style="font-size:15px;color:var(--gray-500);line-height:1.7;margin-bottom:24px;">一句话描述业务场景并选择知识库，AI 自动生成场景目标、开场白、角色指令与问答对话，逐环节可调整。</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;">
+          <span class="feature-pill"><span class="check"></span>场景分类管理</span>
+          <span class="feature-pill"><span class="check"></span>AI 生成问答树</span>
+          <span class="feature-pill"><span class="check"></span>最多 16 环节配置</span>
+        </div>
+      </div>
+      <!-- 自定义评分模型 -->
+      <div class="card sr-item" style="transition-delay:0.16s;">
+        <div class="loop-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 9 9"></path><path d="M12 7a5 5 0 1 0 5 5"></path><circle cx="12" cy="12" r="1.5"></circle></svg></div>
+        <h3 style="font-size:22px;font-weight:700;color:var(--gray-900);margin-bottom:12px;">自定义评分模型</h3>
+        <p style="font-size:15px;color:var(--gray-500);line-height:1.7;margin-bottom:24px;">自定义评分维度与分值占比（亲和力、熟练度、专业度等），设定及格线，量化每一次进步。</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;">
+          <span class="feature-pill"><span class="check"></span>评分维度自定义</span>
+          <span class="feature-pill"><span class="check"></span>分值占比可调</span>
+          <span class="feature-pill"><span class="check"></span>及格线统一设定</span>
+        </div>
+      </div>
+      <!-- 考试与知识库 -->
+      <div class="card sr-item" style="transition-delay:0.24s;">
+        <div class="loop-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path><path d="M9 7h6M9 11h6"></path></svg></div>
+        <h3 style="font-size:22px;font-weight:700;color:var(--gray-900);margin-bottom:12px;">考试与知识库</h3>
+        <p style="font-size:15px;color:var(--gray-500);line-height:1.7;margin-bottom:24px;">文档、话术、视频沉淀为知识库；自动组卷、通过分数、补考机制，考后自动分析薄弱项并给出试题解析。</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;">
+          <span class="feature-pill"><span class="check"></span>题库管理 + AI 出题</span>
+          <span class="feature-pill"><span class="check"></span>自动组卷与补考</span>
+          <span class="feature-pill"><span class="check"></span>薄弱项 + 试题解析</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 培训路径 ============ -->
+<section class="section section--gray">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-kicker">TRAINING PATH</span>
+      <h2 class="section-title">从新手到销冠的成长路径</h2>
+      <p class="section-desc">问答树 + 标准 SOP 让新手变熟手，AIGC 随机应变让熟手变巧手。</p>
+    </div>
+    <div class="grid-2">
+      <div class="card sr-item" style="text-align:center;padding:40px;">
+        <div style="font-size:14px;color:var(--blue-600);font-weight:700;letter-spacing:2px;margin-bottom:16px;">STAGE 01</div>
+        <h3 style="font-size:22px;font-weight:700;color:var(--gray-900);margin-bottom:16px;">问答树 · 标准 SOP</h3>
+        <p style="font-size:16px;color:var(--blue-600);font-weight:600;margin-bottom:16px;">新手 → 熟手</p>
+        <p style="font-size:15px;color:var(--gray-500);line-height:1.7;">基于标准化问答树和 SOP 流程，让新人快速掌握接待规范，通过反复练习形成肌肉记忆。</p>
+      </div>
+      <div class="card sr-item" style="text-align:center;padding:40px;transition-delay:0.1s;">
+        <div style="font-size:14px;color:var(--cyan);font-weight:700;letter-spacing:2px;margin-bottom:16px;">STAGE 02</div>
+        <h3 style="font-size:22px;font-weight:700;color:var(--gray-900);margin-bottom:16px;">AIGC · 随机应变</h3>
+        <p style="font-size:16px;color:var(--cyan);font-weight:600;margin-bottom:16px;">熟手 → 巧手</p>
+        <p style="font-size:15px;color:var(--gray-500);line-height:1.7;">AI 生成多样化客户角色和随机场景，训练应对复杂情况的能力，让员工从标准化走向灵活应变。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 员工端功能 ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-kicker">EMPLOYEE APP</span>
+      <h2 class="section-title">员工端 H5 · 随时随地练习</h2>
+      <p class="section-desc">管理员端（admin.quescoach.com）建课管理，员工端（H5 cqai.voicecomm.cn）随时练习。</p>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:900px;margin:0 auto;">
+      <span class="feature-pill sr-item" style="font-size:15px;padding:10px 20px;">新任务即时通知</span>
+      <span class="feature-pill sr-item" style="font-size:15px;padding:10px 20px;">重新练习</span>
+      <span class="feature-pill sr-item" style="font-size:15px;padding:10px 20px;">课程评价</span>
+      <span class="feature-pill sr-item" style="font-size:15px;padding:10px 20px;">AI 助手答疑</span>
+      <span class="feature-pill sr-item" style="font-size:15px;padding:10px 20px;">对练排名</span>
+      <span class="feature-pill sr-item" style="font-size:15px;padding:10px 20px;">通过率看板</span>
+      <span class="feature-pill sr-item" style="font-size:15px;padding:10px 20px;">学习进度追踪</span>
+      <span class="feature-pill sr-item" style="font-size:15px;padding:10px 20px;">考试记录</span>
+      <span class="feature-pill sr-item" style="font-size:15px;padding:10px 20px;">薄弱项分析</span>
+      <span class="feature-pill sr-item" style="font-size:15px;padding:10px 20px;">知识库浏览</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 与工牌联动 ============ -->
+<section class="section section--gray">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-kicker">DATA LINKAGE</span>
+      <h2 class="section-title">与智能工牌深度联动</h2>
+      <p class="section-desc">对练不是孤立的练习，而是与真实接待数据深度联动的精准提升。</p>
+    </div>
+    <div class="grid-3">
+      <div class="card sr-item" style="text-align:center;">
+        <div class="loop-card__icon" style="margin:0 auto 20px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="M7 14l4-5 4 3 5-7"></path></svg></div>
+        <h3 style="font-size:18px;font-weight:700;margin-bottom:12px;">质检发现短板</h3>
+        <p style="font-size:14px;color:var(--gray-500);line-height:1.7;">工牌质检自动识别员工能力短板，精准定位培训方向。</p>
+      </div>
+      <div class="card sr-item" style="text-align:center;transition-delay:0.1s;">
+        <div class="loop-card__icon" style="margin:0 auto 20px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8.5 14.5a4 4 0 0 0 7 0"></path><path d="M9 10h.01M15 10h.01"></path></svg></div>
+        <h3 style="font-size:18px;font-weight:700;margin-bottom:12px;">AI 推荐课程</h3>
+        <p style="font-size:14px;color:var(--gray-500);line-height:1.7;">基于短板自动推荐对练课程，针对性补强弱项。</p>
+      </div>
+      <div class="card sr-item" style="text-align:center;transition-delay:0.2s;">
+        <div class="loop-card__icon" style="margin:0 auto 20px;"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6M1 20v-6h6"></path><path d="M3.5 9a9 9 0 0 1 14.9-3.4L23 10M1 14l4.6 4.4A9 9 0 0 0 20.5 15"></path></svg></div>
+        <h3 style="font-size:18px;font-weight:700;margin-bottom:12px;">效果回流验证</h3>
+        <p style="font-size:14px;color:var(--gray-500);line-height:1.7;">练习后回到实战，工牌质检验证提升效果，形成闭环。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta-section">
+  <div class="container">
+    <div class="cta-content">
+      <div class="hero-kicker" style="margin-bottom:24px;">START TRAINING</div>
+      <h2 class="cta-title">让每一次练习都指向真实提升</h2>
+      <p class="cta-desc">预约演示智能对练系统，体验 AI 一键建课与数字人陪练。</p>
+      <a href="./about.html#contact" class="btn btn-white btn-lg">预约产品演示</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="./index.html"><span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13h4l3-8 4 13 3.5-9 2.5 4H21"></path></svg></span>Voice 智能医美</a>
+        <p>面向医美机构的四端一体化对话智能系统，让每一次对话都成为增长的引擎。</p>
+        <p class="copyright">&copy; 2026 重庆声通智能科技有限公司 版权所有</p>
+      </div>
+      <div class="footer-col"><h4>产品</h4><a href="./product-coach.html">智能对练系统</a><a href="./product-badge.html">智能工牌</a><a href="./closed-loop.html">三大闭环</a></div>
+      <div class="footer-col"><h4>关于</h4><a href="./about.html">公司简介</a><a href="./about.html#contact">联系我们</a><a href="./about.html#contact">预约演示</a></div>
+      <div class="footer-col"><h4>联系</h4><a href="tel:4000000000">400-000-0000</a><a href="mailto:contact@voice.cn">contact@voice.cn</a><a style="color:var(--gray-500);">工作时间 9:00—18:00</a></div>
+    </div>
+    <div class="footer-bottom"><span>&copy; 2026 重庆声通智能科技有限公司</span><span>渝ICP备XXXXXXXX号</span></div>
+  </div>
+</footer>
+<script src="./assets/voice.js"></script>
+</body>
+</html>
