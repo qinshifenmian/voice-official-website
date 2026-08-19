@@ -50,7 +50,7 @@
   }
 
   // —— 预约表单（提交到本机后端数据库） ——
-  var DEMO_API = 'https://alerts-jim-showtimes-ensures.trycloudflare.com';
+  var DEMO_API = 'https://maritime-infectious-formats-told.trycloudflare.com';
   var demoForm = document.getElementById('demoForm');
   if (demoForm) {
     demoForm.addEventListener('submit', function (e) {
