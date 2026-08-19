@@ -29,7 +29,12 @@
    - 访问 `https://<用户名>.github.io/voice-official-website/`。
    - 注意：中国大陆访问 GitHub Pages 可能不稳定，正式运营建议改用云服务器 + 域名（需 ICP 备案）。
 
-本项目的正式访问地址：**https://qinshifenmian.github.io/voice-official-website/**
+## 正式访问地址（两个版本共存）
+
+- 科技蓝新版（当前主站，5 页）：**https://qinshifenmian.github.io/voice-official-website/**（仓库 `voice-official-website`）
+- 紫色经典版 v1（单页）：**https://qinshifenmian.github.io/voice-official-website-v1/**（仓库 `voice-official-website-v1`）
+
+两个站点共用同一套本机后端与数据库，访客在任何一站提交的预约都会写入 `server/data/voice.db`。
 
 2. **国内云主机 / 对象存储**
    - 阿里云 OSS / 腾讯云 COS 静态网站托管，或云服务器 Nginx；
